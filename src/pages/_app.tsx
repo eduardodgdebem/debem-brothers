@@ -6,10 +6,12 @@ import "~/styles/globals.css";
 import NavBar from "~/components/NavBar";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <>
-    <NavBar></NavBar>
-    <Component {...pageProps} />
-    </>;
+  return (
+    <>
+      <NavBar></NavBar>
+      <Component {...pageProps} />
+    </>
+  );
 };
 
 export default api.withTRPC(MyApp);

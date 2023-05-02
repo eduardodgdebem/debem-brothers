@@ -8,7 +8,6 @@ import NavBar from "~/components/NavBar";
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
-      <NavBar></NavBar>
       <Component {...pageProps} />
     </>
   );

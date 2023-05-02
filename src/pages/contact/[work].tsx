@@ -1,9 +1,10 @@
 import { useRouter } from "next/router"
+import RootLayout from "~/layouts/RootLayouts"
 
 const Contact = () => {
     const router = useRouter()
     const { work } = router.query
-    return <>{work}</>
+    return <RootLayout>{work}</RootLayout>
 }
 
 export default Contact

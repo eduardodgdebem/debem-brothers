@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#1C1C1C] text-[#d1d1d1] font-thin flex p-10 justify-evenly">
+    <footer className="bg-gray-dark text-gray-light font-thin grid grid-cols-[repeat(auto-fit,minmax(12rem,_1fr))] gap-4 p-10 justify-items-center">
       <div>
         <p>call us:</p>
         <ul className="list-disc">

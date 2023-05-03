@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <RootLayout>
       <main>
-        <div className="flex h-screen">
+        <div className="relative flex h-[90vh]">
           <div className="h-full w-full absolute -z-10">
             <div className="h-full w-full relative from-[#00000095] to-[#00000000] after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-gradient-to-b after:opacity-90">
               <Image

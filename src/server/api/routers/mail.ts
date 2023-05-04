@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { mailOptions, transporter } from "~/server/mailer";
+import { mailOptions, transporter } from "~/server/api/mailer";
 
 export const mailRouter = createTRPCRouter({
   sendMailToSelf: publicProcedure

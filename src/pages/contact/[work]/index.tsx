@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEventHandler, useState } from "react";
 import RootLayout from "~/layouts/RootLayouts";
 import { api } from "~/utils/api";
 
@@ -25,9 +25,9 @@ const Page = () => {
     }));
   };
 
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await sendMail.refetch();
+    sendMail.refetch().catch(e => console.error(e));
   };
 
   return (
@@ -97,7 +97,7 @@ const Page = () => {
             placeholder="Additional details"
             className="mt-4 h-[10rem] w-full p-2"
             value={form.additionalDetails}
-            onChange={handleChange as any}
+            onChange={handleChange as ChangeEventHandler}
           ></textarea>
           <button
             type="submit"

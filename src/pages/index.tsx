@@ -4,7 +4,6 @@ import Image from "next/image";
 import kitchenImg from "../../public/kitchen.png";
 import cabinetImg from "../../public/cabinet.png"
 
-import { api } from "~/utils/api";
 import WorkLink from "~/components/WorkLink";
 import RootLayout from "~/layouts/RootLayouts";
 

@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <RootLayout>
       <main>
-        <div className="relative flex h-[90vh]">
+        <div className="relative flex h-[70vh] md:h-[90vh]">
           <div className="h-full w-full absolute -z-10">
             <div className="h-full w-full relative from-[#00000095] to-[#00000000] after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-gradient-to-b after:opacity-90">
               <Image
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
               ></Image>
             </div>
           </div>
-          <h1 className="ml-[10%] mt-[10%] text-[10vw] font-bold leading-[10vw] text-white">
+          <h1 className="text-7xl ml-8 mt-[7rem] md:ml-[10%] md:mt-[10%] md:text-[10vw]  font-bold md:leading-[10vw] text-white">
             de Bem
             <br /> Brothers.
           </h1>

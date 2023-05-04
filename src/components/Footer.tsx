@@ -5,10 +5,10 @@ const Footer = () => {
         <p>call us:</p>
         <ul className="list-disc">
           <li>
-            <a href="tel:+12392445833" className="hover:text-white">239-239-2399</a>
+            <a href="tel:+12393082047" className="hover:text-white">239-308-2047</a>
           </li>
           <li>
-            <a href="tel:+12392445833" className="hover:text-white">239-239-2399</a>
+            <a href="tel:+12392366542" className="hover:text-white">239-236-6542</a>
           </li>
         </ul>
       </div>

@@ -1,16 +1,6 @@
-import { useRouter } from "next/router";
 import { useState } from "react";
 import RootLayout from "~/layouts/RootLayouts";
 import { api } from "~/utils/api";
-
-type formKeys =
-  | "name"
-  | "phone"
-  | "email"
-  | "address"
-  | "city"
-  | "zipCode"
-  | "additionalDetails";
 
 const Page = () => {
   const [form, setForm] = useState({
@@ -37,7 +27,7 @@ const Page = () => {
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const teste = await sendMail.refetch();
+    await sendMail.refetch();
   };
 
   return (

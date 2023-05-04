@@ -9,8 +9,6 @@ import WorkLink from "~/components/WorkLink";
 import RootLayout from "~/layouts/RootLayouts";
 
 const Home: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <RootLayout>
       <main>
